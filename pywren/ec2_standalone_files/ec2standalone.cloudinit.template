@@ -29,6 +29,7 @@ runcmd:
   - [ sudo, -Hu, ec2-user, sh, -c, "/home/ec2-user/anaconda/bin/pip install -e /home/ec2-user/pywren"]
   - [ sudo, -Hu, ec2-user, sh, -c, "sudo yum install -y cmake gcc-c++ boost-devel"]
   - [ sudo, -Hu, ec2-user, sh, -c, "sudo pip install boto3"]
+  - [ sudo, -Hu, ec2-user, sh, -c, "sudo apt-get install libtbb-dev -y"]
   - [ sudo, -Hu, ec2-user, sh, -c, "git clone https://github.com/pxgao/ucache.git /home/ec2-user/ucache"]
   - [ sudo, -Hu, ec2-user, sh, -c, "cd /home/ec2-user/ucache; cmake .; make; cmake .;make"]
   - [ ls, /etc/init.d/]
